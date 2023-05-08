@@ -1,0 +1,918 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+P {
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+div.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* ************* start header************** */
+
+header {
+    width: 1140px;
+    background: none;
+    position: absolute;
+    padding: 0 105px;
+    z-index: 999;
+}
+
+header div.logo {
+    width: 46%;
+    float: left;
+}
+
+header div.logo a {
+    color: white;
+    margin-top: 13px;
+    display: inline-block;
+    font-size: 40px;
+}
+
+header div.logo a span {
+    font-weight: bold;
+}
+
+header div.logo a i {
+    font-size: 25px;
+}
+
+header div.left {
+    width: 54%;
+    float: left;
+}
+
+header div.left a {
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    margin: 19px 9px;
+}
+
+header div.left a:nth-child(6) {
+    padding: 0;
+}
+
+header div.left a span {
+    border: 2px solid white;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+div.header_img {
+    width: 100%;
+    height: 623px;
+    position: relative;
+    overflow: hidden;
+}
+
+div.shadow {
+    width: 100%;
+    height: 623px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+
+div.header_img img {
+    width: 100%;
+    height: 623px;
+    animation-name: img_1;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    transform: scale(1.5, 1.5);
+}
+
+@keyframes img_1 {
+    from {}
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+div.header_text {
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 105px;
+    color: white;
+}
+
+div.header_text h1 {
+    font-size: 71px;
+    margin-bottom: 0;
+}
+
+div.header_text h2,
+h1 {
+    animation-name: text;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+@keyframes text {
+    from {}
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+div.header_text h1 span {
+    color: #00AEFF;
+}
+
+div.header_text h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-size: 44px;
+    font-weight: 100;
+}
+
+div.header_text p {
+    line-height: 30px;
+    margin-top: 0;
+    font-size: 20px;
+    animation-name: text;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+@keyframes text {
+    from {}
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+div.header_text div.button button {
+    font-size: 20px;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background: none;
+    margin-right: 14px;
+    animation-name: text;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+@keyframes text {
+    from {}
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+div.header_text div.button button:nth-child(2) {
+    background-color: #00AEFF;
+    border: none;
+    padding: 12px 25px;
+}
+
+
+/* ************* end header************** */
+
+
+/* ************* start Our continents************** */
+
+div.our_continents {
+    width: 100%;
+    height: 500px;
+}
+
+div.our_continents h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #00AEFE;
+}
+
+div.our_continents div.box {
+    width: 240px;
+    height: 320px;
+    position: relative;
+    float: left;
+    box-shadow: 0 0 41px 1px rgba(0, 0, 0, 0.5);
+}
+
+div.our_continents div.box:nth-child(3) {
+    margin: 0 60px;
+}
+
+div.our_continents div.box:nth-child(4) {
+    margin: 0 60px 0 0px;
+}
+
+div.our_continents div.box div.img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+
+div.our_continents div.box div.img img {
+    width: 100%;
+    animation-name: picture;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    transform: scale(1.5, 1.5);
+}
+
+@keyframes picture {
+    from {}
+    to {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+div.our_continents div.box div.text_img {
+    width: 98%;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    z-index: 999;
+}
+
+div.our_continents div.box div.text_shadow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: 998;
+}
+
+
+/* ************* end Our continents************** */
+
+
+/* ************* start info************** */
+
+div.info div.box {
+    max-width: 347px;
+    height: 300px;
+    text-align: center;
+    font-size: 18px;
+    float: left;
+}
+
+.info div.box:nth-child(2) {
+    padding: 0 49px;
+}
+
+div.info div.box h3 {
+    color: #333333;
+    line-height: 10px;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+div.info div.box p {
+    width: 100%;
+    line-height: 30px;
+    color: #777777;
+}
+
+div.info div.box div.icons {
+    font-size: 40px;
+    color: #F85A40;
+}
+
+div.info div.box div.icon2 {
+    color: #30C39E;
+}
+
+div.info div.box div.icon3 {
+    color: #0A8EA0;
+}
+
+
+/* ************* end info************** */
+
+
+/* ************* start main picture************** */
+
+main.picture {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main.picture div.picture {
+    width: 49%;
+    height: 400px;
+}
+
+main.picture div.fontext {
+    width: 49%;
+    height: 400px;
+}
+
+main.picture div.fontext h3 {
+    width: 100%;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 35px;
+    color: #333333;
+}
+
+main.picture div.fontext p {
+    width: 100%;
+    font-size: 18px;
+    color: #777777;
+    line-height: 30px;
+}
+
+
+/* ************* end main picture************** */
+
+
+/* ************* strat main-************** */
+
+div.information {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.information div.box {
+    width: 25%;
+    height: 250px;
+    text-align: start;
+    font-size: 17px;
+    display: block;
+    padding-right: 5px;
+}
+
+div.information div.box:nth-child(4) {
+    padding-right: 0;
+}
+
+div.information div.box h3 {
+    color: #333333;
+    line-height: 10px;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+div.information div.box p {
+    width: 100%;
+    line-height: 30px;
+    color: #777777;
+}
+
+div.information div.box div.icons {
+    font-size: 30px;
+    color: #FF4F81;
+}
+
+div.information div.box div.icon2 {
+    color: #30C39E;
+}
+
+div.information div.box div.icon3 {
+    color: #1CC7D0;
+}
+
+div.information div.box div.icon4 {
+    color: #3369E7;
+}
+
+
+/* ************* strat main-************** */
+
+
+/* ************* strat black statistic information************** */
+
+div.blackfon {
+    width: 100%;
+    height: 500px;
+    background-color: #222222;
+}
+
+div.blackfon div.container>h1 {
+    font-size: 42px;
+    font-weight: normal;
+    color: #eee;
+    padding-top: 80px;
+}
+
+div.blackfon div.container h1 span {
+    font-weight: bold;
+}
+
+div.blackfon div.boxs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.blackfon div.boxs div.box {
+    width: 350px;
+    height: 300px;
+}
+
+div.blackfon div.boxs div.box p {
+    font-size: 19px;
+    line-height: 32px;
+    color: #AAAAAA;
+}
+
+div.blackfon div.boxs div.box button {
+    width: 150px;
+    height: 48px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+div.blackfon div.boxs div.box img {
+    width: 100%;
+    height: 100%;
+}
+
+div.blackfon div.boxs div.box span.text {
+    font-size: 17px;
+    color: #aaaaaa;
+    text-transform: uppercase;
+}
+
+div.blackfon div.boxs div.box div.stats {
+    width: 95%;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #eeeeee;
+    margin: 16px 0px;
+}
+
+div.blackfon div.boxs div.box div.stats div.background {
+    width: 30%;
+    height: 100%;
+    border-radius: 0 17px 17px 0;
+    background-color: #007BFF;
+}
+
+div.blackfon div.boxs div.box div.stats div.background2 {
+    width: 55%;
+    background-color: #D03241;
+}
+
+div.blackfon div.boxs div.box div.stats div.background3 {
+    width: 50%;
+    background-color: #17A2B8;
+}
+
+div.blackfon div.boxs div.box div.stats div.background4 {
+    width: 75%;
+    background-color: #FFC107;
+}
+
+div.blackfon div.boxs div.box div.stats div.background5 {
+    width: 90%;
+    background-color: #28A745;
+}
+
+
+/* ************* end black statistic information************** */
+
+
+/* ************* start black marketing************** */
+
+div.marketing p {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 45px;
+    color: #343A40;
+}
+
+div.marketing p span {
+    font-weight: bold;
+}
+
+div.marketing div.boxes {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+div.marketing div.boxes div.box1 {
+    width: 255px;
+    height: 150px;
+    line-height: 5px;
+    background-color: #F6F6F6;
+    box-shadow: 7px 5px 7px 0px rgba(97, 97, 97, 0.1);
+}
+
+div.marketing div.boxes div.box1 i {
+    color: #FF4F81;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
+
+div.marketing div.boxes div.box1 i.fa-newspaper-o {
+    color: #30C39E;
+}
+
+div.marketing div.boxes div.box1 i.fa-newspaper-o {
+    color: #30C39E;
+}
+
+div.marketing div.boxes div.box1 i.fa-product-hunt {
+    color: #3369E7;
+}
+
+div.marketing div.boxes div.box1 h2 {
+    font-size: 22px;
+    color: #343A40;
+    font-weight: normal;
+    display: block;
+    text-align: center;
+}
+
+div.marketing div.boxes div.box1 div.hover {
+    cursor: pointer;
+    transform: scale(1, 1);
+    transition: all 0.5s ease-in-out;
+}
+
+div.marketing div.boxes div.box1 div.hover:hover {
+    transform: scale(0.9, 0.9);
+}
+
+
+/* ************* end black marketing************** */
+
+
+/* ************* start black growth************** */
+
+div.growth {
+    width: 100%;
+    height: 480px;
+    position: relative;
+}
+
+div.growth img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.growth div.theme {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+div.growth div.texts h1 {
+    font-weight: normal;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 10%;
+}
+
+div.growth div.texts h1 span {
+    font-weight: bold;
+}
+
+div.growth div.box11 {
+    width: 84%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 40%;
+    line-height: 20px;
+}
+
+div.growth div.box11 div.statistica {
+    width: 150px;
+    height: 200px;
+}
+
+div.growth div.box11 div.statistica p i {
+    font-size: 40px;
+    color: #00AEFF;
+}
+
+div.growth div.box11 div.statistica h1 {
+    color: white;
+    font-size: 55px;
+}
+
+div.growth div.box11 div.statistica p.text_partners {
+    color: #DDDDDD;
+    font-size: 18px;
+}
+
+div.growth div.box11 div.infobox {
+    width: 350px;
+    height: 130px;
+    border: 10px solid #AAAAAA;
+    font-family: candara;
+    font-size: 25px;
+    color: #D5D5D5;
+    margin-top: 20px;
+}
+
+div.growth div.box11 div.infobox p {
+    width: 90%;
+    margin-top: 12px;
+    margin-left: 15px;
+    line-height: 35px
+}
+
+
+/* ************* end black growth************** */
+
+
+/************* start black mobile apps***************/
+
+div.body1 {
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #060c21;
+}
+
+div.container2 {
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 40px;
+}
+
+div.container2 div.box115 {
+    position: relative;
+    height: 400px;
+    background: #060c21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container2 div.box115 div.content116 {
+    position: relative;
+    padding: 20px;
+    transform: translateY(40px);
+}
+
+div.container2 div.box115::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+
+container2 .box115:nth-child(1):before div.box115 div.content116 h2 {
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: rgba(255, 255, 255, .05);
+    transition: 0.5s;
+}
+
+div.box115 div.content116 h2 {
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: rgba(255, 255, 255, .05);
+    transition: 0.5s;
+}
+
+div.box115:hover div.content116 h2 {
+    top: -135px;
+}
+
+div.box115 div.content116 h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+div.box115 div.content116 p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+div.box115 div.content116 a {
+    position: relative;
+    margin: 20px 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+div.box115:hover div.content116 a {
+    transform: translateY(-0px);
+    opacity: 1;
+    visibility: visible;
+}
+
+div.mobile {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+div.mobile div.pages {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.mobile div.pages div.apps {
+    width: 22%;
+    height: 130px;
+}
+
+div.mobile div.pages div.apps p.iconfooter {
+    font-size: 22px;
+    color: #333333;
+    margin-top: 10px;
+}
+
+div.mobile div.pages div.apps p.iconfooter i {
+    color: #00AEFF;
+    padding-right: 10px;
+}
+
+div.mobile div.pages div.apps p.iconfooter_text {
+    font-family: candara;
+    font-size: 18px;
+    line-height: 30px;
+    color: #666666;
+}
+
+
+/************* end black mobile apps***************/
+
+
+/************* start black footer***************/
+
+footer {
+    width: 100%;
+    background-color: #161616;
+}
+
+footer div.liner {
+    width: 100%;
+    height: 80px;
+    background-color: #161616;
+    border-top: 1px dashed #636363;
+}
+
+footer div.footer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+footer div.footer div.linking {
+    width: 18%;
+    height: 300px;
+}
+
+footer div.footer div.linking h2 {
+    color: white;
+    font-size: 25px;
+}
+
+footer div.footer div.linking p {
+    font-family: candara;
+    color: #777777;
+    font-size: 18px;
+}
+
+footer div.footer div.linking p i {
+    padding-right: 10px;
+}
+
+footer div.footer div.linking p span a {
+    text-decoration: none;
+    color: #777777;
+    transition: all 0.3s ease-in-out;
+}
+
+footer div.footer div.linking p span a:hover {
+    margin-left: 10px;
+}
+
+footer div.liner div.leftright {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+footer div.liner div.leftright div.left {
+    color: #777777;
+    font-size: 16px;
+}
+
+footer div.liner div.leftright div.left a {
+    text-decoration: none;
+    color: #777777;
+    transition: all .5s;
+}
+
+footer div.liner div.leftright div.left a:hover {
+    margin-left: 10px;
+}
+
+footer div.liner div.leftright div.right {
+    color: #777777;
+    font-size: 16px;
+}
+
+footer div.liner div.leftright div.right a {
+    text-decoration: none;
+    color: #777777;
+    padding-right: 30px;
+    transition: all 0.5s ease;
+}
+
+footer div.liner div.leftright div.right a:hover {
+    color: white;
+}
+
+
+/************* end black footer***************/
